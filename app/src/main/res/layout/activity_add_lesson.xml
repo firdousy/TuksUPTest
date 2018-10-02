@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="true"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#bfbfbf">
+
+
+            <ImageButton
+                android:id="@+id/action_back_edit_subj"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:elevation="0dp"
+                android:textColor="@android:color/black"
+                android:contentDescription="Back" />
+
+            <ImageButton
+                android:id="@+id/action_delete_lesson"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_delete"
+                android:elevation="0dp"
+                android:textColor="@android:color/black"
+                android:contentDescription="Delete"/>
+
+            <ImageButton
+                android:id="@+id/action_save_lesson"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_save"
+                android:elevation="0dp"
+                android:textColor="@android:color/black"
+                android:contentDescription="save changes"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#1a09d6"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/lesson_code_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            android:text="Code"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/weekdayLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekday"
+                    android:labelFor="@id/weekday"/>
+
+                <Spinner
+                    android:id="@+id/weekday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/sessionLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Session"
+                    android:labelFor="@id/lectureNumber"/>
+
+                <Spinner
+                    android:id="@+id/session"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/venueLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Venue"
+                    android:labelFor="@id/lectureNumber"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select a class venue"/>
+
+                <TextView
+                    android:id="@+id/selectedVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+
+                <TextView
+                    android:id="@+id/lectureTypeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lecture Type"
+                    android:labelFor="@id/lectureType"/>
+                <Spinner
+                    android:id="@+id/lectureType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/lecNoLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lecture Number"
+                    android:labelFor="@id/lectureNumber"/>
+
+                <EditText
+                    android:id="@+id/lectureNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lecture Number"
+                    android:inputType="number"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--android:backgroundTint="@color/white"-->
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

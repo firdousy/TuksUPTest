@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_dashboard"-->
+        <!--android:icon="@drawable/ic_dashboard_black_24dp"-->
+        <!--android:title="@string/title_dashboard" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_notifications"-->
+        <!--android:icon="@drawable/ic_notifications_black_24dp"-->
+        <!--android:title="@string/title_notifications" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_directory"-->
+        <!--android:icon="@android:drawable/ic_input_get"-->
+        <!--android:title="@string/directory" />-->
+    <item
+        android:id="@+id/navigation_subjects"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:title="@string/subjects" />
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@android:drawable/ic_lock_idle_alarm"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="@string/profile" />
+
+</menu>

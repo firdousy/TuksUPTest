@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivMain"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/session_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/timelineLine"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="7:30"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:id="@+id/timelineLine"
+            android:layout_width="3dp"
+            android:layout_height="90dp"
+            android:layout_toEndOf="@+id/ivMain"
+            android:background="@color/colorAccent"/>
+
+        <FrameLayout
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/travelTime"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_toEndOf="@+id/timelineLine"
+            android:background="@color/colorAccent">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/subject_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_toEndOf="@+id/timelineLine"
+            android:text="DMY 120"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lectureType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/lecture_number"
+            android:layout_toStartOf="@+id/lecture_number"
+            android:text="Lecture"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lecture_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:paddingRight="5dp"
+            android:text="1"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/classRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lectureType"
+            android:paddingRight="5dp"
+            android:text="IT 4-4"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/travelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivMain"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/subject_code"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_toEndOf="@+id/timelineLine"
+            android:layout_toRightOf="@+id/timelineLine"
+            android:text="20min"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

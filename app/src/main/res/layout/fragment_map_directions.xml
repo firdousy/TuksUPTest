@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/colorAccent">-->
+    <!---->
+
+    <!--<com.google.android.gms.maps.MapView-->
+        <!--android:id="@+id/mapView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1" />-->
+<!--</LinearLayout>-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAccent">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:id="@+id/searchViewBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="#ccffffff"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            app:srcCompat="@drawable/marker_a" />
+
+        <AutoCompleteTextView
+            android:id="@+id/startPoint"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:hint="Start Location"
+            android:theme="@style/Theme.AppCompat.Light"
+            app:layout_constraintBottom_toTopOf="@id/endPoint" />
+
+        <Button
+            android:id="@+id/directionsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="fill_vertical"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:text="Get Route"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            app:srcCompat="@drawable/marker_b" />
+
+        <AutoCompleteTextView
+            android:id="@+id/endPoint"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:hint="End Destination"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/infoMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/directionsList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_myplaces"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/searchMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/directionsList"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/toggleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/directionsList"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_always_landscape_portrait" />
+
+    <GridLayout
+        android:id="@+id/directionsList"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:background="@android:color/darker_gray"
+            android:text="Estimated Time : Unknown" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="1"
+            android:orientation="horizontal"
+            app:reverseLayout="true" />
+
+        <ImageButton
+            android:id="@+id/action_close_directions"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@android:color/darker_gray"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="@android:color/background_dark" />
+
+    </GridLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

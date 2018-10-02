@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "220751790092",
+    "firebase_url": "https://tuksmap-e8e73.firebaseio.com",
+    "project_id": "tuksmap-e8e73",
+    "storage_bucket": "tuksmap-e8e73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220751790092:android:86c2f4cc3cbaf147",
+        "android_client_info": {
+          "package_name": "com.example.firdous.tuksup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220751790092-9mlpb6rebbdu84lk2guu4f0nrhe5gr4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI2wkiPCOPmRM_tiXhv9ePXdR6_HCQ-oo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

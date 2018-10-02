@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.firdous.tuksup.CustomComponents.LetterImageView
+            android:id="@+id/ivMain"
+            android:layout_width="75dp"
+            android:layout_height="90dp">
+
+        </com.example.firdous.tuksup.CustomComponents.LetterImageView>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/ivMain"-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="90dp" />-->
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_toRightOf="@+id/ivMain"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subject_name"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_toRightOf="@+id/ivMain"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/subject_lecturer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivMain"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/subject_code"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

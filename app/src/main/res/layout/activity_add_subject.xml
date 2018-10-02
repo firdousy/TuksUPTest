@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubjectBuilder.AddSubjectActivity">
+
+
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfbfbf">
+
+
+        <Button
+            android:id="@+id/action_back_subjects"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableStart="@android:drawable/ic_menu_close_clear_cancel"
+            android:elevation="0dp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/action_delete_subject"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableStart="@android:drawable/ic_menu_delete"
+            android:elevation="0dp"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/action_save_subjects"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:elevation="0dp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#1a09d6"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/subject_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject Name"
+        android:labelFor="@id/subjectName"/>
+    <EditText
+        android:id="@+id/subjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Subject Name"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="40dp"
+        android:hint="Subject Name"/>
+
+    <TextView
+        android:id="@+id/subject_code_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject Code"
+        android:labelFor="@id/subjectCode"/>
+
+    <EditText
+        android:id="@+id/subjectCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Subject Code"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="40dp"
+        android:hint="Short description"/>
+
+    <TextView
+        android:id="@+id/subject_lect_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lecturer"
+        android:labelFor="@id/subjectLecturer"/>
+
+    <EditText
+        android:id="@+id/subjectLecturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Lecturer"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="40dp"
+        android:hint="Lecturer"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfbfbf">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Lessons"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/action_add_lesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:elevation="0dp"
+            android:text="Add"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+
+
+</LinearLayout>

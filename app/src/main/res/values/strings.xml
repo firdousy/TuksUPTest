@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">TuksUP</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="subjects">Subjects</string>
+    <string name="campusmap">Campus Map</string>
+    <string name="title_activity_test">test</string>
+    <string name="schedule">Schedule</string>
+    <string name="profile">Profile</string>
+    <string name="directory">Directory</string>
+
+    <string-array name="Weekdays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+
+    <string-array name="Lecture_Type">
+        <item>Lecture</item>
+        <item>Practical</item>
+        <item>Tutorial</item>
+    </string-array>
+
+    <string-array name="Sessions">
+        <item>seven</item>
+        <!--<item><![CDATA[7:30–8:20]]></item>-->
+        <!--<item><![CDATA[8:30–9:20]]></item>-->
+        <!--<item><![CDATA[9:30–10:20]]></item>-->
+        <!--<item><![CDATA[10:30–11:20]]></item>-->
+        <!--<item><![CDATA[11:30–12:20]]></item>-->
+        <!--<item><![CDATA[12:30–13:20]]></item>-->
+        <!--<item><![CDATA[13:30–14:20]]></item>-->
+        <!--<item><![CDATA[14:30–15:20]]></item>-->
+        <!--<item><![CDATA[15:30–16:20]]></item>-->
+        <!--<item><![CDATA[16:30–17:20]]></item>-->
+
+    </string-array>
+
+    <string-array name="colors" translatable="false">
+        <item>#99cc00</item>
+        <item>#33b5e5</item>
+        <item>#0099cc</item>
+        <item>#547bca</item>
+        <item>#aa66cc</item>
+        <item>#9933cc</item>
+        <item>#669900</item>
+        <item>#aeb857</item>
+        <item>#cc0000</item>
+        <item>#df5948</item>
+        <item>#ff4444</item>
+        <item>#ae6b23</item>
+        <item>#ff8800</item>
+        <item>#e5ae4f</item>
+        <item>#ffbb33</item>
+        <item>#cccccc</item>
+        <item>#888888</item>
+    </string-array>
+
+
+    <string name="title_activity_add_lesson">AddLessonActivity</string>
+    <string name="search_string">Search</string>
+</resources>
